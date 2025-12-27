@@ -8,15 +8,15 @@ export default function Navbar() {
 
   return (
    <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur border-b z-50 shadow-md">
-  <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
     {/* Logo with animation */}
       <Link to="/">
       <Motion.img
         src={logo}
         alt="Billions Tech Logo"
-        className="w-16 h-16 md:w-28 md:h-28 rounded-2xl object-contain"
-        whileHover={{ scale: 1.1, rotate: 5 }}
-        transition={{ type: "spring", stiffness: 200 }}
+        className="w-20 h-20 md:w-32 md:h-32 rounded-2xl object-contain"
+        whileHover={{ scale: 1.03, rotate: 3 }}
+        transition={{ type: "spring", stiffness: 180 }}
       />
     </Link>
 
@@ -30,7 +30,11 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden text-3xl p-2 rounded-md hover:bg-gray-100 transition"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
           ☰
         </button>
       </div>
