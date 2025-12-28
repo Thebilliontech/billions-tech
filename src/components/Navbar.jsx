@@ -25,7 +25,6 @@ export default function Navbar() {
           <Link to="/about" className="hover:text-gold transition">About</Link>
           <Link to="/services" className="hover:text-gold transition">Services</Link>
           <Link to="/portfolio" className="hover:text-gold transition">Portfolio</Link>
-          <Link to="/careers" className="hover:text-gold transition">Careers</Link>
           <Link to="/contact" className="hover:text-gold transition">Contact</Link>
         </div>
 
@@ -45,7 +44,6 @@ export default function Navbar() {
           <Link to="/about" className="hover:text-gold transition">About</Link>
           <Link to="/services" className="hover:text-gold transition">Services</Link>
           <Link to="/portfolio" className="hover:text-gold transition">Portfolio</Link>
-          <Link to="/careers" className="hover:text-gold transition">Careers</Link>
           <Link to="/contact" className="hover:text-gold transition">Contact</Link>
         </div>
       )}
