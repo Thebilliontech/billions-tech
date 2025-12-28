@@ -34,7 +34,9 @@ export default function Hero() {
 
         <div className="mt-8 flex gap-4 justify-center">
           <a
-            href="/contact"
+            href="https://wa.me/2348088199560"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gold text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-2xl transition"
           >
             Work With Us

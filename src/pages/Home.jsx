@@ -1,5 +1,9 @@
 import Hero from "../components/Hero";
 import ServicesGrid from "../components/ServicesGrid";
+import Pricing from "../components/Pricing";
+import OurProcess from "../components/OurProcess";
+import FAQ from "../components/FAQ";
+import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 
 
@@ -11,6 +15,10 @@ return (
 <h2 className="text-3xl font-bold text-center">What We Do</h2>
 <ServicesGrid />
 </section>
+<Pricing />
+<OurProcess />
+<FAQ />
+<Testimonials />
 <CTA />
 </main>
 );
