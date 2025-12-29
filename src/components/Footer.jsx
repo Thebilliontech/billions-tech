@@ -13,9 +13,6 @@ return (
 <a href="/contact" className="hover:text-gold transition">Contact</a>
 </div>
 </div>
-<div className="pt-6 border-t border-gold/10 text-xs text-gray-500">
-Built with innovation and precision for the future of technology.
-</div>
 </div>
 </footer>
 );

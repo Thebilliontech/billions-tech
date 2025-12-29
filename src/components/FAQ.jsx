@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "How long does a project take?",
     answer:
-      "Project timelines vary based on complexity. Basic websites typically take 5–7 days, Premium projects 7–10 days, and Professional projects 10–14 days. We'll provide a detailed timeline during the discovery phase.",
+      "Project timelines vary based on complexity. Basic websites typically take 5–9 days, Premium projects 10–25 days, and Custom projects 30–60 days. We'll provide a detailed timeline during the discovery phase.",
   },
   {
     question: "Do you offer maintenance?",

@@ -29,7 +29,7 @@ className="glass-effect rounded-2xl p-6 hover:glow-gold-hover transition-all dur
 >
 <h3 className="font-semibold text-lg text-white mb-2 group-hover:text-gold transition-colors">{service}</h3>
 <p className="text-sm text-gray-400 mt-2">
-Tailored solutions designed to scale with your business.
+
 </p>
 <div className="mt-4 h-0.5 w-0 bg-gold group-hover:w-full transition-all duration-300"></div>
 </Motion.div>
