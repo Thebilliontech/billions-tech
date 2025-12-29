@@ -22,8 +22,8 @@ export default function OurProcess() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold">Our Process</h2>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">Our Process</h2>
+        <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
           At Billions Tech, we follow a structured and transparent process to
           ensure every project is delivered efficiently, strategically, and to
           the highest standard.
@@ -44,12 +44,12 @@ export default function OurProcess() {
               duration: 0.6,
               delay: index * 0.1,
             }}
-            className="border rounded-2xl p-6 hover:shadow-lg transition bg-white text-center"
+            className="glass-effect rounded-2xl p-6 hover:glow-gold-hover transition-all duration-300 text-center group"
           >
             <div className="w-10 h-10 bg-gold text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4">
               {index + 1}
             </div>
-            <h3 className="font-semibold text-lg text-gray-800">{step}</h3>
+            <h3 className="font-semibold text-lg text-white group-hover:text-gold transition-colors">{step}</h3>
           </Motion.div>
         ))}
       </div>

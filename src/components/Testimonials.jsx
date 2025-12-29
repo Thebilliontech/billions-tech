@@ -32,7 +32,7 @@ export default function Testimonials() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold">What Our Clients Say</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">What Our Clients Say</h2>
       </Motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -49,14 +49,14 @@ export default function Testimonials() {
               duration: 0.6,
               delay: index * 0.2,
             }}
-            className="border rounded-2xl p-6 bg-white shadow-md hover:shadow-lg transition"
+            className="glass-effect rounded-2xl p-6 hover:glow-gold-hover transition-all duration-300"
           >
-            <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
-            <div className="border-t pt-4">
-              <div className="font-semibold text-gray-800">
+            <p className="text-gray-300 mb-6 italic">"{testimonial.text}"</p>
+            <div className="border-t border-gold/20 pt-4">
+              <div className="font-semibold text-white">
                 {testimonial.name}
               </div>
-              <div className="text-sm text-gray-500">{testimonial.role}</div>
+              <div className="text-sm text-gray-400">{testimonial.role}</div>
             </div>
           </Motion.div>
         ))}

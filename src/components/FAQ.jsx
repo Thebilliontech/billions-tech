@@ -47,7 +47,7 @@ export default function FAQ() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">Frequently Asked Questions</h2>
       </Motion.div>
 
       <div className="space-y-4">
@@ -64,13 +64,13 @@ export default function FAQ() {
               duration: 0.5,
               delay: index * 0.1,
             }}
-            className="border rounded-2xl bg-white overflow-hidden"
+            className="glass-effect rounded-2xl overflow-hidden hover:glow-gold-hover transition-all duration-300"
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition"
+              className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gold/10 transition"
             >
-              <span className="font-semibold text-gray-800">{faq.question}</span>
+              <span className="font-semibold text-white">{faq.question}</span>
               <Motion.span
                 animate={{ rotate: openIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
@@ -88,7 +88,7 @@ export default function FAQ() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 pb-4 text-gray-600">{faq.answer}</div>
+                  <div className="px-6 pb-4 text-gray-300">{faq.answer}</div>
                 </Motion.div>
               )}
             </AnimatePresence>

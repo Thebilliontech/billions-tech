@@ -14,7 +14,7 @@ const pricingPlans = [
       "Basic UI/UX design",
       "Contact form integration",
       "Basic SEO setup",
-      "Delivery: 5–7 days",
+      "Delivery: 5–9 days",
     ],
   },
   {
@@ -27,12 +27,12 @@ const pricingPlans = [
       "CMS or dynamic content",
       "Advanced SEO setup",
       "Performance optimization",
-      "Delivery: 7–10 days",
+      "Delivery: 10–25 days",
     ],
   },
   {
-    name: "Professional",
-    price: "₦450,000",
+    name: "Custom",
+    price: "₦400,000 - ∞",
     features: [
       "Unlimited pages",
       "Custom design & branding",
@@ -41,7 +41,7 @@ const pricingPlans = [
       "API integrations",
       "Full SEO & analytics setup",
       "Priority support",
-      "Delivery: 10–14 days",
+      "Delivery: 30–60 days",
     ],
   },
 ];
@@ -58,8 +58,8 @@ export default function Pricing() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold">Website Pricing</h2>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">Website Pricing</h2>
+        <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
           Transparent pricing and exceptional value. Choose the plan that fits
           your business needs.
         </p>
@@ -80,15 +80,15 @@ export default function Pricing() {
               delay: index * 0.2,
             }}
             whileHover={{ scale: 1.05 }}
-            className="border rounded-2xl p-6 hover:shadow-lg transition bg-white"
+            className="glass-effect rounded-2xl p-6 hover:glow-gold-hover transition-all duration-300"
           >
-            <h3 className="font-bold text-xl text-gray-800 mb-2">
+            <h3 className="font-bold text-xl text-white mb-2">
               {plan.name}
             </h3>
-            <div className="text-3xl font-bold text-gold mb-6">
+            <div className="text-3xl font-bold gradient-text mb-6">
               {plan.price}
             </div>
-            <ul className="space-y-3 mb-8 text-sm text-gray-600">
+            <ul className="space-y-3 mb-8 text-sm text-gray-300">
               {plan.features.map((feature, idx) => (
                 <li key={idx} className="flex items-start">
                   <span className="text-gold mr-2">✓</span>
