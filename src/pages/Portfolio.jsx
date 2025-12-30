@@ -4,6 +4,10 @@ import { useRef, useState, useEffect } from "react";
 import beeves1 from "../assets/beeves1.png";
 import beeves2 from "../assets/beeves2.png";
 import beeves3 from "../assets/beeves3.png";
+import fundme1 from "../assets/fundme1.png";
+import fundme2 from "../assets/fundme2.png";
+import fundme3 from "../assets/fundme3.png";
+
 
 const portfolioItems = [
   {
@@ -71,29 +75,27 @@ const portfolioItems = [
     `,
   },
   {
-    title: "Mobile Banking App",
-    category: "Mobile Development",
+    title: "FundMe",
+    category: "UI/UX Design",
     description:
       "Secure, user-friendly mobile banking application with biometric authentication and real-time transactions.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
+    image: fundme1,
     tags: ["Figma", "Photoshop", "Adobe illustrator"],
     modalImages: [
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
+      fundme1,
+      fundme2,
+      fundme3
     ],
     modalContent: `
-      <p>A comprehensive mobile banking solution that provides secure, convenient access to banking services. The app features state-of-the-art security measures including biometric authentication and end-to-end encryption.</p>
+      <h3>Problem Statement</h3>
+      <p>Many individuals face stress and frustration due to the facts that traditional banking systems are inefficient, like the slow transaction processing, inaccessible banking services outside of working hours, and complex interfaces. FundMe aims to solve these issues by providing a smooth banking experience that prioritizes speed, simplicity, and security. This problem affects a wide range of users, including those managing personal finances, small business owners, and freelancers.</p>
       
-      <h3>Key Features</h3>
+      <h3>Objectives & Goals</h3>
       <ul>
-        <li>Biometric authentication (fingerprint and face recognition)</li>
-        <li>Real-time account balance and transaction history</li>
-        <li>Bill payment and money transfer capabilities</li>
-        <li>Investment portfolio management</li>
-        <li>Cardless ATM withdrawals</li>
-        <li>24/7 customer support chat</li>
+        <li>Speed and Efficiency: Ensure faster transaction processing and instant fund transfers.</li>
+        <li>Integration: Enable integration with other financial tools and platforms.</li>
+        <li>Accessibility: Provide 24/7 access to banking services through a user-friendly mobile app.</li>
+        <li>Simplicity: Design an intuitive interface that simplifies complex banking operations.</li>
       </ul>
       
       <h3>Security Features</h3>
