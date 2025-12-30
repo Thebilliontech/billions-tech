@@ -4,19 +4,19 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "CEO, TechStart Inc.",
-    text: "Billions Tech transformed our digital presence. Their attention to detail and professional approach exceeded our expectations. Highly recommended!",
+    name: "Benjamin",
+    role: "CEO, Beeves Social",
+    text: "When we approached Billions Tech, we were a bit worried because our brand was new, Beeves Social, is all about giving client what they want and 'vibes.' We needed a website that looked as good as our social media feeds. Honestly, I was expecting a long, stressful back-and-forth. Instead, the team at Billions just got it.",
   },
   {
-    name: "Sarah Johnson",
-    role: "Founder, Design Studio",
-    text: "Working with Billions Tech was seamless. They delivered a beautiful, functional website on time and within budget. The team is responsive and professional.",
+    name: "Wealth",
+    role: "Manager, Bling Tech",
+    text: "At Bling Tech, we were generating so much sales data every day, but it was just sitting in spreadsheets, completely useless to us. We called Billions Tech to help us make sense of the mess. They didn't just give us a bunch of fancy charts; they sat down and helped us understand the story behind the numbers.",
   },
   {
-    name: "Michael Chen",
-    role: "Director, Innovation Labs",
-    text: "The custom solution Billions Tech built for us has significantly improved our operations. Their technical expertise and customer service are outstanding.",
+    name: "Michael",
+    role: "Director, OX Ride",
+    text: "I had this idea for a mobile app for months, but I kept hearing horror stories about developers who take your money and disappear or deliver something that crashes every two minutes. Working with Billions Tech was the opposite of that. They talked to me like a human, explained the technical bits in plain English, and kept me updated every Friday. If you want it done right the first time, this is the team.",
   },
 ];
 

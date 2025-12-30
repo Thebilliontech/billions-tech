@@ -1,40 +1,43 @@
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import beeves1 from "../assets/beeves1.png";
+import beeves2 from "../assets/beeves2.png";
+import beeves3 from "../assets/beeves3.png";
 
 const portfolioItems = [
   {
-    title: "E-Commerce Platform",
+    title: "Esim Platform",
     category: "Web Development",
     description:
-      "A modern, scalable e-commerce solution with advanced analytics and seamless payment integration.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "Global access in a click. Get reliable foreign numbers for SMS verification and international business, delivered instantly.",
+    image: beeves3,
     tags: ["React", "Node.js", "MongoDB"],
     modalImages: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
+      beeves3,
+      beeves2,
+      beeves1
     ],
     modalContent: `
-      <p>This comprehensive e-commerce platform was built to handle high-volume transactions while providing an exceptional user experience. The platform features a modern, responsive design that works seamlessly across all devices.</p>
+      <p>This streamlined communication platform was built to provide users with instant access to foreign virtual numbers for SMS verification and international business. The platform focuses on speed and reliability, ensuring that regional barriers never stop a user from accessing global digital services.</p>
       
       <h3>Key Features</h3>
       <ul>
-        <li>Advanced product catalog with filtering and search capabilities</li>
-        <li>Secure payment processing with multiple gateway integrations</li>
-        <li>Real-time inventory management system</li>
-        <li>Comprehensive analytics dashboard for business insights</li>
-        <li>Customer review and rating system</li>
-        <li>Automated email notifications and order tracking</li>
+        <li>Instant Number Provisioning: Automated system to purchase and receive foreign numbers in seconds.</li>
+        <li>Global Reach: Access to mobile numbers from over 50+ countries for various platform verifications.</li>
+        <li>Secure Credit System: An integrated wallet and payment system for seamless, one-click transactions.</li>
+        <li>Real-Time SMS Delivery: A high-speed gateway that ensures verification codes are received without delay.</li>
+        <li>User-Friendly Dashboard: A simplified interface for managing active numbers and tracking message history.</li>
+        <li>Privacy-First Architecture: Built-in protocols to ensure user data and transaction history remain confidential.</li>
       </ul>
       
       <h3>Technical Implementation</h3>
-      <p>The platform was built using React for the frontend, providing a fast and interactive user experience. The backend utilizes Node.js with Express, ensuring scalable and efficient server-side operations. MongoDB was chosen for its flexibility in handling product data and user information.</p>
+      <p>The platform was built using React for the frontend to ensure a snappy, "app-like" experience for users on the go. The backend is powered by Node.js, designed to handle concurrent API requests from multiple global SMS providers simultaneously. PostgreSQL was utilized for the database to ensure high data integrity for financial transactions and user balances.</p>
       
-      <p>We implemented advanced features such as real-time inventory updates, dynamic pricing, and personalized product recommendations using machine learning algorithms. The system also includes comprehensive admin tools for managing products, orders, and customer data.</p>
+      <pWe integrated specialized API webhooks to listen for incoming messages in real-time, allowing users to see their SMS codes instantly without refreshing the page. The system also features an automated "clean-up" script that recycles expired numbers to maintain a fresh and reliable inventory for all customers.</p>
       
       <h3>Results</h3>
-      <p>The platform successfully launched with over 10,000 products and has processed thousands of transactions. The client reported a 40% increase in online sales within the first three months of launch.</p>
+      <p>BeevesSms successfully launched and quickly became a go-to tool for entrepreneurs and digital nomads. Within the first few months, the platform reached a milestone of 5,000+ successful activations, boasting a 98% delivery rate on verification codes. The automated system reduced manual customer support requests by 60%, allowing the business to scale effortlessly.</p>
     `,
   },
   {
@@ -73,7 +76,7 @@ const portfolioItems = [
     description:
       "Secure, user-friendly mobile banking application with biometric authentication and real-time transactions.",
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
-    tags: ["React Native", "Firebase", "Stripe"],
+    tags: ["Figma", "Photoshop", "Adobe illustrator"],
     modalImages: [
       "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=800&fit=crop",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
@@ -168,23 +171,31 @@ export default function Portfolio() {
 
   const openModal = (item) => {
     setSelectedItem(item);
-    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setSelectedItem(null);
-    document.body.style.overflow = 'unset';
   };
 
-  // Handle ESC key to close modal
+  // Handle body overflow and ESC key
   useEffect(() => {
+    if (selectedItem) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
     const handleEscape = (e) => {
       if (e.key === 'Escape' && selectedItem) {
-        closeModal();
+        setSelectedItem(null);
       }
     };
+
     document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'unset';
+    };
   }, [selectedItem]);
 
   return (
