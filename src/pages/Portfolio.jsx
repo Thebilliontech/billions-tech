@@ -7,7 +7,12 @@ import beeves3 from "../assets/beeves3.png";
 import fundme1 from "../assets/fundme1.png";
 import fundme2 from "../assets/fundme2.png";
 import fundme3 from "../assets/fundme3.png";
-
+import data1 from "../assets/data1.png";
+import data2 from "../assets/data2.png";
+import data3 from "../assets/data3.png";
+import oxride1 from "../assets/oxride1.png";
+import oxride2 from "../assets/oxride2.png";
+import oxride3 from "../assets/oxride3.png";
 
 const portfolioItems = [
   {
@@ -106,63 +111,66 @@ const portfolioItems = [
     `,
   },
   {
-    title: "Enterprise CRM System",
-    category: "Enterprise Solutions",
+    title: "OX Ride",
+    category: "UI/UX Design",
     description:
-      "Comprehensive customer relationship management system with automation and advanced reporting.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    tags: ["Vue.js", "Laravel", "PostgreSQL"],
+      "When going out using the public transport, users face a lot of delay, based on it is not going to their actual route",
+    image: oxride1,
+    tags: ["Figma", "Photoshop", "Adobe illustrator"],
     modalImages: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
+      oxride1,
+      oxride2,
+      oxride3
     ],
     modalContent: `
-      <p>A powerful CRM system designed for enterprise-level organizations to manage customer relationships, sales pipelines, and marketing campaigns effectively.</p>
+      <h3>Problem Statement</h3>
+      <p>We wanted to solve the stress of getting a cab, or waiting too long to get a taxi, hence the OX Ride. Because, many people get stranded on the road during bad weather. This problem is has affected many people going to work and school.</p>
       
-      <h3>Key Features</h3>
+      <h3>Objectives & Goals</h3>
       <ul>
-        <li>Comprehensive contact and lead management</li>
-        <li>Sales pipeline tracking and forecasting</li>
-        <li>Automated marketing campaigns</li>
-        <li>Advanced reporting and analytics</li>
-        <li>Integration with email and calendar systems</li>
-        <li>Customizable workflows and automation</li>
+        <li>A time effective way to get to work and to get anywhere you desire</li>
+        <li>A cost friendly way of moving around, and also environmental-friendly.</li>
+        <li>Easy to use and understand for all users</li> 
       </ul>
       
-      <h3>Technical Implementation</h3>
-      <p>Built with Vue.js for a reactive frontend experience and Laravel for a robust backend API. PostgreSQL provides reliable data storage with advanced querying capabilities.</p>
-      
-      <p>The system supports multi-tenancy, allowing different departments or teams to have isolated workspaces while sharing common resources. We implemented role-based access control to ensure data security and proper permissions management.</p>
-    `,
+      <h3>Business Challenges</h3>
+      <ul>
+        <li>Verifying drivers and the cars they use</li>
+        <li>A cost friendly way of moving around, and also environmental-friendly.</li>
+        <li>Verification of user</li> 
+      </ul> `,
   },
   {
-    title: "IoT Smart Home Platform",
-    category: "IoT & Automation",
+    title: "Chemical Injection Pump Predictive Data System",
+    category: "Data Analytics",
     description:
-      "Integrated smart home ecosystem with voice control, automation, and energy management features.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-    tags: ["IoT", "React", "AWS"],
+      "The result is a system that a company can use to plan maintenance ahead of breakdowns, cut downtime, and save on operating costs",
+    image: data1,
+    tags: ["Excel"],
     modalImages: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop",
+      data1,
+      data2,
+      data3
     ],
     modalContent: `
-      <p>An innovative IoT platform that connects and controls various smart home devices through a unified interface. The platform enables users to create custom automation scenarios and monitor their home's energy consumption.</p>
+      <p we started with just raw logs – usage days, flow rates, maintenance records – and transformed them into a working Excel dashboard.</p>
       
-      <h3>Key Features</h3>
+      <h3>Dashboard Shows</h3>
       <ul>
-        <li>Voice control integration with major assistants</li>
-        <li>Custom automation rules and schedules</li>
-        <li>Real-time energy monitoring and optimization</li>
-        <li>Remote access and control from anywhere</li>
-        <li>Device compatibility with 100+ smart home products</li>
-        <li>Security monitoring and alerts</li>
+        <li>Pump degradation trends</li>
+        <li>Lifetime usage hours</li>
+        <li>Health status (Good, Needs Check, Critical)</li>
+        <li> Early warnings for failures</li>
       </ul>
       
-      <h3>Technical Implementation</h3>
-      <p>The platform uses AWS IoT Core for device management and messaging, ensuring reliable communication between devices and the cloud. The React-based web interface and mobile apps provide seamless control from any device.</p>
-      
-      <p>We implemented advanced machine learning algorithms to learn user patterns and suggest optimal automation scenarios. The system also includes predictive maintenance features that alert users to potential device issues before they occur.</p>
-    `,
+      <h3>The Goal</h3>
+      <p>The goal was simple:</p>
+      <ul>
+        <li>Track pump health over time</li>
+        <li>Predict failures before they happen</li>
+        <li>Monitor the total lifetime of every pump</li>
+     </ul>
+      <p>With this system, the company can now plan maintenance ahead of breakdowns, cut downtime, and save on operating costs.</p>`,
   },
 ];
 
